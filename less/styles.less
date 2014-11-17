@@ -1,0 +1,79 @@
+// Variables =======================================================
+
+@primary-color:               #ff9800;
+@gray-font-color:             rgba(0,0,0,.87);
+@gray-divider-color:          rgba(0,0,0,.12);
+@gray-secondary-color:        rgba(0,0,0,.4);
+@font-weight-bold:            500;
+@font-weight-regular:         400;
+
+
+// Font ========================================================
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500);
+
+
+// simple reset =======================================================
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;  
+  font-family: 'Roboto', sans-serif;
+  font-weight: @font-weight-regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: @gray-font-color;
+  } 
+
+
+// header =======================================================
+
+body{
+  margin-top: 56px;
+}
+
+
+header{
+  background: @primary-color;
+  line-height: 56px;
+  padding-left: 16px;
+  font-size: 20px;
+  font-weight: @font-weight-bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 3px rgba(0,0,0,.3);
+  color: #fff;
+}
+
+
+// List =======================================================
+
+
+li{
+  padding: 16px;
+  border-bottom: 1px solid @gray-divider-color;
+  &:last-child{
+    border: none;
+  }  
+}
+
+
+// Blanck screen =======================================================
+
+i, h2, p{
+  text-align: center;
+  display: block;
+}
+
+i{
+  color: @gray-secondary-color;
+  font-size: 300%!important;
+  margin:64px 0 10px 0;
+}
+
+h2{
+  font-weight: @font-weight-bold;
+}
